@@ -1,0 +1,31 @@
+- name: quality
+  type: parallel
+  service: app
+  steps:
+    - name: lint
+      command: yarn lint
+
+- name: integration
+  type: serial
+  tag: master
+  steps:
+    - name: build
+      type: parallel
+      service: app
+      steps: 
+        - name: static
+          command: yarn build
+
+        - name: dynamic
+          command: ./node_modules/.bin/sls package
+
+    - name: deploy
+      type: parallel
+      steps: 
+        - name: static
+          service: aws
+          command: aws s3 sync app/build s3://bnti
+        
+        - name: dynamic
+          service: app
+          command: ./node_modules/.bin/sls deploy --package .serverless

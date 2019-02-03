@@ -1,0 +1,62 @@
+{
+  "name": "bnti",
+  "version": "0.1.0",
+  "homepage": "http://bnti.s3-website.eu-west-2.amazonaws.com",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "react-scripts start",
+    "start:prod": "yarn build && serve -s build -l 3000",
+    "start-api": "sls offline start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "lint": "eslint ./src"
+  },
+  "dependencies": {
+    "chance": "1.0.18",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
+    "react-scripts": "2.1.3",
+    "styled-components": "4.1.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "7.5.0",
+    "@commitlint/config-conventional": "7.5.0",
+    "eslint": "5.6.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-prettier": "4.0.0",
+    "eslint-plugin-prettier": "3.0.1",
+    "husky": "1.3.1",
+    "lint-staged": "8.1.3",
+    "prettier": "1.16.4",
+    "serve": "10.1.1",
+    "serverless": "1.36.3",
+    "serverless-offline": "4.2.1",
+    "serverless-plugin-include-dependencies": "3.2.1"
+  },
+  "resolutions": {
+    "terser": "3.14.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,yml,md,html}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
