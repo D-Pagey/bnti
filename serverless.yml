@@ -19,6 +19,14 @@ functions:
           path: hello
           method: get
 
+  pubgMatches:
+    handler: functions/index.pubgMatches
+    events:
+      - http:
+          path: pubg/matches
+          method: get
+          cors: true
+
 plugins:
   - serverless-offline
   - serverless-plugin-include-dependencies
