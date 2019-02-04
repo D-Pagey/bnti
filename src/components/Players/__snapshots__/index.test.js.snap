@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Players component should render 1`] = `
+<div>
+  <h2>
+    Select the players stats you wish to see:
+  </h2>
+  <select
+    name="players"
+  >
+    <option
+      value="GingerVking"
+    >
+      GingerVking
+    </option>
+    <option
+      value="Hunty"
+    >
+      Hunty
+    </option>
+    <option
+      value="Raged"
+    >
+      R4g3d
+    </option>
+  </select>
+  <div>
+    <h3>
+      GingerVking's stats
+    </h3>
+    <ul>
+      <li>
+        Kills: 
+        0
+      </li>
+      <li>
+        Deaths: 
+        0
+      </li>
+      <li>
+        Wins: 
+        0
+      </li>
+    </ul>
+  </div>
+</div>
+`;

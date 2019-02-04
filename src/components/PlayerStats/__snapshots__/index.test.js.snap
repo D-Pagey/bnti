@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayerStats component should render 1`] = `
+<div>
+  <h3>
+    GingerVking's stats
+  </h3>
+  <ul>
+    <li>
+      Kills: 
+      500
+    </li>
+    <li>
+      Deaths: 
+      250
+    </li>
+    <li>
+      Wins: 
+      1
+    </li>
+  </ul>
+</div>
+`;

@@ -25,6 +25,20 @@ functions:
             type: COGNITO_USER_POOLS
             authorizerId:
               Ref: SiteApiGatewayAuthorizer
+  pubgMatches:
+    handler: index.pubgMatches
+    events:
+      - http:
+          path: pubg/matches
+          method: get
+          cors: true
+  playerStats:
+    handler: index.playerStats
+    events:
+      - http:
+          path: players/stats/{id}
+          method: get
+          cors: true
 
 resources:
   Resources:

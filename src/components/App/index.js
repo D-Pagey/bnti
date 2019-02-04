@@ -11,7 +11,7 @@ import * as S from './styles';
 
 const GlobalStyle = createGlobalStyle`${normalize()}`;
 
-export default function App() {
+const App = () => {
     return (
         <Router history={createBrowserHistory()}>
             <S.Wrapper>
@@ -27,4 +27,6 @@ export default function App() {
             </S.Wrapper>
         </Router>
     );
-}
+};
+
+export default App;
