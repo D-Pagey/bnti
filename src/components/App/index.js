@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default class App extends Component {
     componentDidMount() {
-        axios.get('http://localhost:3001/pubg/matches').then((resp) => console.log('resp', resp));
+        axios.get(`${process.env.REACT_APP_API_GATEWAY}/pubg/matches`).then((resp) => console.log('resp', resp));
     }
 
     render() {
