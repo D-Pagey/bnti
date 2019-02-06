@@ -63,8 +63,7 @@
   "lint-staged": {
     "*.js": [
       "eslint --fix",
-      "git add",
-      "yarn test --findRelatedTests"
+      "git add"
     ],
     "*.{json,yml,md,html}": [
       "prettier --write",
@@ -74,7 +73,8 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
     }
   },
   "browserslist": [
