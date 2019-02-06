@@ -1,6 +1,6 @@
 {
   "extends": ["airbnb", "prettier", "prettier/react", "plugin:jest/recommended"],
-  "plugins": ["prettier", "jest"],
+  "plugins": ["react-hooks", "prettier", "jest"],
   "env": {
     "browser": true,
     "node": true,
@@ -9,6 +9,7 @@
   "rules": {
     "import/prefer-default-export": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "react-hooks/rules-of-hooks": 2,
     "prettier/prettier": 2,
     "jest/prefer-to-be-null": 2,
     "jest/prefer-to-be-undefined": 2,
