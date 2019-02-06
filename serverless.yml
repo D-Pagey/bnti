@@ -9,11 +9,11 @@ package:
   exclude:
     - ./**
   include:
-    - functions/**
+    - src/functions/**
 
 functions:
   hello:
-    handler: functions/index.hello
+    handler: index.hello
     events:
       - http:
           path: hello
@@ -22,7 +22,9 @@ functions:
 plugins:
   - serverless-offline
   - serverless-plugin-include-dependencies
+  - serverless-functions-base-path
 
 custom:
+  functionsBasePath: src/functions
   serverless-offline:
     port: 3001

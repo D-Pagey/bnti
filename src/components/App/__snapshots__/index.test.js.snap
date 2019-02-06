@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component should render 1`] = `
+<div
+  className="App"
+>
+  <h1>
+    Bantiiiii
+  </h1>
+  <p>
+    API_GATEWAY = 
+  </p>
+</div>
+`;
