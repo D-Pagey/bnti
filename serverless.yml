@@ -6,10 +6,7 @@ provider:
   region: eu-west-2
 
 package:
-  exclude:
-    - ./**
-  include:
-    - src/functions/**
+  individually: true
 
 functions:
   hello:
@@ -50,13 +47,14 @@ resources:
 
 plugins:
   - serverless-functions-base-path
+  - serverless-plugin-optimize
   - serverless-s3-sync
   - serverless-offline
-  - serverless-plugin-include-dependencies
 
 custom:
   siteName: www.bnti.com
   functionsBasePath: src/functions
+  optimize: true
   s3Sync:
     - bucketName: ${self:custom.siteName}
       localDir: build

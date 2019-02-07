@@ -2,6 +2,7 @@ node_modules
 coverage
 build
 .serverless
+_optimize
 codeship.aes
 codeship.env
 *.log
