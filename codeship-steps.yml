@@ -10,11 +10,11 @@
 
 - name: integration
   type: serial
+  service: app
   tag: master
   steps:
     - name: build
       type: parallel
-      service: app
       steps:
         - name: static
           command: yarn build
@@ -23,12 +23,4 @@
           command: ./node_modules/.bin/sls package
 
     - name: deploy
-      type: parallel
-      steps:
-        - name: static
-          service: aws
-          command: aws s3 sync app/build s3://bnti
-
-        - name: dynamic
-          service: app
-          command: ./node_modules/.bin/sls deploy --package .serverless
+      command: ./node_modules/.bin/sls deploy --package .serverless

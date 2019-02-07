@@ -3,15 +3,6 @@ app:
     dockerfile: Dockerfile
   cached: true
   encrypted_env_file: codeship.env.encrypted
-  volumes: 
-    - ./.serverless:/app/.serverless
-  volumes_from:
-    - aws
-
-aws:
-  image: codeship/aws-deployment
-  encrypted_env_file: codeship.env.encrypted
-  environment:
-    - AWS_DEFAULT_REGION=eu-west-2
   volumes:
+    - ./.serverless:/app/.serverless
     - ./build:/app/build
