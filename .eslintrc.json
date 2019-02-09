@@ -1,15 +1,20 @@
 {
   "parser": "babel-eslint",
   "extends": ["airbnb", "prettier", "prettier/react", "plugin:jest/recommended"],
-  "plugins": ["react-hooks", "prettier", "jest"],
+  "plugins": ["react-hooks", "prettier", "jest", "cypress"],
   "env": {
     "browser": true,
     "node": true,
-    "jest/globals": true
+    "jest/globals": true,
+    "cypress/globals": true
   },
   "rules": {
     "import/prefer-default-export": 0,
     "import/no-named-as-default": 0,
+    "import/no-extraneous-dependencies": [
+      2,
+      { "devDependencies": ["*/setupTests.js", "**/cypress/**/*.js", "**/*.test.js", "**/*.spec.js"] }
+    ],
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
     "react-hooks/rules-of-hooks": 2,
     "prettier/prettier": 2,

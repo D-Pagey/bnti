@@ -8,6 +8,9 @@
     - name: test
       command: yarn test --ci
 
+    - name: test:e2e
+      command: yarn test:e2e
+
 - name: integration
   type: serial
   service: app

@@ -1,9 +1,9 @@
-FROM node:8.10.0-slim
+FROM cypress/browsers:chrome67
 
 WORKDIR /app
 
 COPY package.json .
 COPY yarn.lock .
-RUN yarn install
+RUN yarn install --frozen-lockfile
 
 COPY . /app

@@ -1,5 +1,6 @@
 node_modules
 coverage
+cypress/screenshots
 build
 .serverless
 _optimize
