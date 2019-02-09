@@ -1,10 +1,16 @@
 import React from 'react';
+import { Router, Switch, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import HomePage from '../HomePage';
+import LoginPage from '../LoginPage';
 
 export default function App() {
     return (
-        <div className="App">
-            <h1>Bantiiiii</h1>
-            <p>API_GATEWAY = {process.env.REACT_APP_API_GATEWAY}</p>
-        </div>
+        <Router history={createBrowserHistory()}>
+            <Switch>
+                <Route exact path="/" component={HomePage} />
+                <Route path="/login" component={LoginPage} />
+            </Switch>
+        </Router>
     );
 }

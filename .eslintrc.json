@@ -1,4 +1,5 @@
 {
+  "parser": "babel-eslint",
   "extends": ["airbnb", "prettier", "prettier/react", "plugin:jest/recommended"],
   "plugins": ["react-hooks", "prettier", "jest"],
   "env": {
@@ -8,6 +9,7 @@
   },
   "rules": {
     "import/prefer-default-export": 0,
+    "import/no-named-as-default": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
     "react-hooks/rules-of-hooks": 2,
     "prettier/prettier": 2,

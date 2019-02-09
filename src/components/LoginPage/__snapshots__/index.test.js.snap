@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginPage component should render 1`] = `
+<form>
+  <input
+    data-testid="emailInput"
+    type="email"
+    value=""
+  />
+  <input
+    data-testid="passwordInput"
+    type="password"
+    value=""
+  />
+  <button
+    data-testid="loginButton"
+    disabled=""
+    type="submit"
+  >
+    Login
+  </button>
+  <button
+    data-testid="backButton"
+    type="button"
+  >
+    Go Back
+  </button>
+</form>
+`;
