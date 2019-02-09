@@ -1,0 +1,8 @@
+{
+  "presets": ["react-app"],
+  "env": {
+    "production": {
+      "plugins": ["babel-plugin-jsx-remove-data-test-id"]
+    }
+  }
+}

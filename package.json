@@ -5,11 +5,11 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "rescripts start",
     "start:prod": "yarn build && serve -s build -l 3000",
     "start-api": "sls offline start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --verbose --coverage --no-cache",
+    "build": "rescripts build",
+    "test": "rescripts test --verbose --coverage --no-cache",
     "test:e2e": "start-server-and-test start 3000 cypress:run",
     "test:e2e:interactive": "start-server-and-test start 3000 cypress:open",
     "lint": "eslint ./src",
@@ -29,6 +29,9 @@
   "devDependencies": {
     "@commitlint/cli": "7.5.0",
     "@commitlint/config-conventional": "7.5.0",
+    "@rescripts/cli": "0.0.10",
+    "@rescripts/rescript-env": "0.0.5",
+    "babel-plugin-jsx-remove-data-test-id": "2.0.0",
     "cypress": "3.1.5",
     "cypress-testing-library": "2.3.5",
     "eslint": "5.6.0",
@@ -91,5 +94,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
+  ],
+  "rescripts": [
+    "env"
   ]
 }
