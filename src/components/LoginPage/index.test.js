@@ -1,5 +1,6 @@
 import React from 'react';
-import { render, fireEvent } from 'react-testing-library';
+import { render } from 'react-testing-library';
+import userEvent from 'user-event';
 import { LoginPage } from '.';
 
 const props = {
@@ -18,7 +19,7 @@ describe('LoginPage component', () => {
         const { getByTestId } = render(<LoginPage {...props} history={history} />);
         const backButton = getByTestId('backButton');
 
-        fireEvent.click(backButton);
+        userEvent.click(backButton);
         expect(goBack).toHaveBeenCalled();
     });
 
@@ -36,8 +37,8 @@ describe('LoginPage component', () => {
             const passwordInput = getByTestId('passwordInput');
             const loginButton = getByTestId('loginButton');
 
-            if (email) fireEvent.change(emailInput, { target: { value: email } });
-            if (password) fireEvent.change(passwordInput, { target: { value: password } });
+            if (email) userEvent.type(emailInput, email);
+            if (password) userEvent.type(passwordInput, password);
 
             if (disabled) expect(loginButton).toBeDisabled();
             else expect(loginButton).not.toBeDisabled();
@@ -50,7 +51,7 @@ describe('LoginPage component', () => {
         const input = getByTestId(`${type}Input`);
 
         expect(input.value).toEqual('');
-        fireEvent.change(input, { target: { value } });
+        userEvent.type(input, value);
         expect(input.value).toEqual(value);
     });
 });
