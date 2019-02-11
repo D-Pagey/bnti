@@ -1,8 +1,13 @@
-import Chance from 'chance';
+const Chance = require('chance');
 
 const chance = new Chance();
 
-export const hello = async () => ({
+module.exports.hello = async () => ({
     statusCode: 200,
-    body: JSON.stringify({ message: `Hello ${chance.name()}!!` })
+    body: JSON.stringify({ message: `Hello ${chance.name()}!` })
+});
+
+module.exports.helloAuth = async () => ({
+    statusCode: 200,
+    body: JSON.stringify({ message: `Special hello to you ${chance.name()}!` })
 });

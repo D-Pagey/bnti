@@ -15,10 +15,20 @@ functions:
       - http:
           path: hello
           method: get
+  helloAuth:
+    handler: index.helloAuth
+    events:
+      - http:
+          path: hello-auth
+          method: get
+          authorizer:
+            type: COGNITO_USER_POOLS
+            authorizerId:
+              Ref: SiteApiGatewayAuthorizer
 
 resources:
   Resources:
-    StaticSite:
+    SiteBucket:
       Type: AWS::S3::Bucket
       Properties:
         AccessControl: PublicRead
@@ -26,11 +36,11 @@ resources:
         WebsiteConfiguration:
           IndexDocument: index.html
           ErrorDocument: index.html
-    StaticSiteS3BucketPolicy:
+    SiteBucketPolicy:
       Type: AWS::S3::BucketPolicy
       Properties:
         Bucket:
-          Ref: StaticSite
+          Ref: SiteBucket
         PolicyDocument:
           Statement:
             - Sid: PublicReadGetObject
@@ -42,8 +52,33 @@ resources:
                 Fn::Join:
                   - ''
                   - - 'arn:aws:s3:::'
-                    - Ref: StaticSite
+                    - Ref: SiteBucket
                     - '/*'
+    SiteUserPool:
+      Type: AWS::Cognito::UserPool
+      Properties:
+        UserPoolName: ${self:custom.stageName}
+        UsernameAttributes:
+          - email
+        AutoVerifiedAttributes:
+          - email
+    SiteUserPoolClient:
+      Type: AWS::Cognito::UserPoolClient
+      Properties:
+        ClientName: ${self:custom.stageName}
+        UserPoolId:
+          Ref: SiteUserPool
+        GenerateSecret: false
+    SiteApiGatewayAuthorizer:
+      Type: AWS::ApiGateway::Authorizer
+      Properties:
+        Name: ${self:custom.stageName}
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        Type: COGNITO_USER_POOLS
+        ProviderARNs:
+          - Fn::GetAtt: [SiteUserPool, Arn]
+        IdentitySource: method.request.header.Authorization
 
 plugins:
   - serverless-functions-base-path
@@ -53,6 +88,7 @@ plugins:
 
 custom:
   siteName: www.bnti.com
+  stageName: ${self:service}-${self:provider.stage}
   functionsBasePath: src/functions
   optimize: true
   s3Sync:
