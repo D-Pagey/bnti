@@ -130,13 +130,13 @@ exports[`Header component should render 1`] = `
     >
       <a
         class="c6"
-        href="/signup"
+        href="/login"
       >
         <button
           class="c7"
           type="button"
         >
-          Sign Up
+          Login
         </button>
       </a>
     </li>

@@ -1,35 +1,39 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
+import React, { useState, useContext } from 'react';
+import AuthContext from '../../contexts/auth';
 
-export function LoginPage({ history }) {
+export default function LoginPage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const { authSession, authLogin } = useContext(AuthContext);
 
-    const handleSubmit = /* istanbul ignore next */ (event) => event.preventDefault();
     const handleChange = (handler) => ({ target: { value } }) => handler(value);
     const validateForm = () => email.length && password.length;
 
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        authLogin(email, password);
+    };
+
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="email" value={email} onChange={handleChange(setEmail)} data-testid="emailInput" />
-            <input type="password" value={password} onChange={handleChange(setPassword)} data-testid="passwordInput" />
+        <>
+            {!authSession && (
+                <form onSubmit={handleSubmit} data-testid="loginForm">
+                    <input type="email" value={email} onChange={handleChange(setEmail)} data-testid="emailInput" />
 
-            <button type="submit" disabled={!validateForm()} data-testid="loginButton">
-                Login
-            </button>
+                    <input
+                        type="password"
+                        value={password}
+                        onChange={handleChange(setPassword)}
+                        data-testid="passwordInput"
+                    />
 
-            <button type="button" onClick={history.goBack} data-testid="backButton">
-                Go Back
-            </button>
-        </form>
+                    <button type="submit" disabled={!validateForm()} data-testid="loginButton">
+                        Login
+                    </button>
+                </form>
+            )}
+
+            {authSession && <pre data-testid="authSessionJSON">{JSON.stringify(authSession, null, 2)}</pre>}
+        </>
     );
 }
-
-LoginPage.propTypes = {
-    history: PropTypes.shape({
-        goBack: PropTypes.func.isRequired
-    }).isRequired
-};
-
-export default withRouter(LoginPage);

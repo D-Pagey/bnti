@@ -17,6 +17,7 @@
     "cypress:open": "cypress open"
   },
   "dependencies": {
+    "aws-amplify": "1.1.19",
     "chance": "1.0.18",
     "history": "4.7.2",
     "polished": "3.0.0",

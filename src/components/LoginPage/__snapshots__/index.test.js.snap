@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LoginPage component should render 1`] = `
-<form>
+<form
+  data-testid="loginForm"
+>
   <input
     data-testid="emailInput"
     type="email"
@@ -18,12 +20,6 @@ exports[`LoginPage component should render 1`] = `
     type="submit"
   >
     Login
-  </button>
-  <button
-    data-testid="backButton"
-    type="button"
-  >
-    Go Back
   </button>
 </form>
 `;

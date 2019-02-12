@@ -1,25 +1,12 @@
 import React from 'react';
 import userEvent from 'user-event';
-import { LoginPage } from '.';
-
-const props = {
-    history: { goBack: () => {} }
-};
+import AuthContext from '../../contexts/auth';
+import LoginPage from '.';
 
 describe('LoginPage component', () => {
     it('should render', () => {
-        const { container } = render(<LoginPage {...props} />);
+        const { container } = render(<LoginPage />);
         expect(container.firstChild).toMatchSnapshot();
-    });
-
-    it('should handle back button', () => {
-        const goBack = jest.fn();
-        const history = { goBack };
-        const { getByTestId } = render(<LoginPage {...props} history={history} />);
-        const backButton = getByTestId('backButton');
-
-        userEvent.click(backButton);
-        expect(goBack).toHaveBeenCalled();
     });
 
     it.each`
@@ -31,7 +18,7 @@ describe('LoginPage component', () => {
     `(
         'should have submit disabled ($disabled) when email is $email and password is $password',
         ({ email, password, disabled }) => {
-            const { getByTestId } = render(<LoginPage {...props} />);
+            const { getByTestId } = render(<LoginPage />);
             const emailInput = getByTestId('emailInput');
             const passwordInput = getByTestId('passwordInput');
             const loginButton = getByTestId('loginButton');
@@ -46,11 +33,39 @@ describe('LoginPage component', () => {
 
     it.each(['email', 'password'])('should handle %s change', (type) => {
         const value = 'foobar';
-        const { getByTestId } = render(<LoginPage {...props} />);
+        const { getByTestId } = render(<LoginPage />);
         const input = getByTestId(`${type}Input`);
 
         expect(input.value).toEqual('');
         userEvent.type(input, value);
         expect(input.value).toEqual(value);
+    });
+
+    it('should display auth session JSON instead of login form', () => {
+        const { queryByTestId, getByTestId } = renderWithRouter(
+            <AuthContext.Provider value={{ authSession: {} }}>
+                <LoginPage />
+            </AuthContext.Provider>
+        );
+
+        expect(queryByTestId('loginForm')).toBeNull();
+        getByTestId('authSessionJSON');
+    });
+
+    it('should call auth login with credentials on form submit', () => {
+        const email = 'foo@bar.com';
+        const password = 'foobar123';
+        const authLogin = jest.fn();
+        const { getByTestId } = renderWithRouter(
+            <AuthContext.Provider value={{ authLogin }}>
+                <LoginPage />
+            </AuthContext.Provider>
+        );
+
+        userEvent.type(getByTestId('emailInput'), email);
+        userEvent.type(getByTestId('passwordInput'), password);
+        userEvent.click(getByTestId('loginButton'));
+
+        expect(authLogin).toHaveBeenCalledWith(email, password);
     });
 });
