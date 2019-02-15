@@ -73,6 +73,92 @@ exports[`App component should render 1`] = `
   color: white;
 }
 
+.c9 {
+  background-color: #353535;
+  padding: 1rem 0;
+}
+
+.c10 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px auto;
+  width: 950px;
+}
+
+.c11 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 450px;
+}
+
+.c12 {
+  color: #00A7CB;
+  font-family: 'Quicksand',sans-serif;
+  font-size: 36px;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.c13 {
+  background: linear-gradient(180deg,#20fff2 0%,rgba(255,255,255,0) 100%),#00a7cb;
+  border: 0;
+  border-radius: 33px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  opacity: 0.9;
+  padding: 1rem 1.35rem;
+}
+
+.c14 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 430px;
+}
+
+.c15 {
+  height: auto;
+  margin: 10px 20px;
+  width: 250px;
+}
+
+.c16 {
+  height: auto;
+  margin: 10px 20px;
+  width: 150px;
+}
+
 .c0 {
   font-family: 'Quicksand',Tahoma,Verdana,sans-serif;
 }
@@ -149,18 +235,65 @@ exports[`App component should render 1`] = `
       </li>
     </ul>
   </div>
-  <div>
-    <h1>
-      Bantiiiii
-    </h1>
-    <p>
-      API_GATEWAY = 
-    </p>
-    <a
-      href="/login"
+  <div
+    class="c9"
+  >
+    <div
+      class="c10"
     >
-      Go to login
-    </a>
+      <div
+        class="c11"
+      >
+        <h3
+          class="c12"
+        >
+          Discover a new way to play your favourite games
+        </h3>
+        <a
+          href="/tournaments"
+        >
+          <button
+            class="c13"
+            type="button"
+          >
+            Find games
+          </button>
+        </a>
+      </div>
+      <div
+        class="c14"
+      >
+        <img
+          alt="pubg"
+          class="c15"
+          src="logo-pubg.png"
+          width="250px"
+        />
+        <img
+          alt="apex"
+          class="c16"
+          src="logo-apex.png"
+          width="150px"
+        />
+        <img
+          alt="fortnite"
+          class="c16"
+          src="logo-fortnite.png"
+          width="150px"
+        />
+      </div>
+    </div>
   </div>
+  <h1>
+    Bantiiiii
+  </h1>
+  <p>
+    API_GATEWAY = 
+  </p>
+  <a
+    href="/login"
+  >
+    Go to login
+  </a>
 </div>
 `;
