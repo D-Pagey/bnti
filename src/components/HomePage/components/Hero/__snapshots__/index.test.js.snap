@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HomePage component should render 1`] = `
+exports[`Hero component should render 1`] = `
 .c0 {
   background-color: #353535;
   padding: 1rem 0;
