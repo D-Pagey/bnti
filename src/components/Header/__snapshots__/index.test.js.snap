@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component should render 1`] = `
-.c5 {
+exports[`Header component should render 1`] = `
+.c4 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -15,15 +15,15 @@ exports[`App component should render 1`] = `
   padding: 0;
 }
 
-.c6 {
+.c5 {
   margin-right: 2rem;
 }
 
-.c6:hover {
+.c5:hover {
   color: white;
 }
 
-.c7 {
+.c6 {
   color: inherit;
   font-size: 1.2rem;
   font-weight: 500;
@@ -31,7 +31,7 @@ exports[`App component should render 1`] = `
   text-decoration: none;
 }
 
-.c8 {
+.c7 {
   background-color: black;
   border: 0;
   border-radius: 16px;
@@ -42,7 +42,7 @@ exports[`App component should render 1`] = `
   padding: 5px 15px;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -59,108 +59,87 @@ exports[`App component should render 1`] = `
   padding: 1.3rem 1rem;
 }
 
-.c3 {
+.c2 {
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2 {
+.c1 {
   margin: 0;
 }
 
-.c4 {
+.c3 {
   color: white;
-}
-
-.c0 {
-  font-family: 'Quicksand',Tahoma,Verdana,sans-serif;
 }
 
 <div
   class="c0"
 >
-  <div
+  <h2
     class="c1"
   >
-    <h2
-      class="c2"
+    <a
+      aria-current="page"
+      class="c2 active"
+      href="/"
     >
-      <a
-        aria-current="page"
-        class="c3 active"
-        href="/"
+      <span
+        class="c3"
       >
-        <span
-          class="c4"
-        >
-          BR
-        </span>
-        Battles
-      </a>
-    </h2>
-    <ul
+        BR
+      </span>
+      Battles
+    </a>
+  </h2>
+  <ul
+    class="c4"
+  >
+    <li
       class="c5"
     >
-      <li
+      <a
         class="c6"
+        href="/about"
       >
-        <a
-          class="c7"
-          href="/about"
-        >
-          About
-        </a>
-      </li>
-      <li
-        class="c6"
-      >
-        <a
-          class="c7"
-          href="/tournaments"
-        >
-          Tournaments
-        </a>
-      </li>
-      <li
-        class="c6"
-      >
-        <a
-          class="c7"
-          href="/stats"
-        >
-          Stats
-        </a>
-      </li>
-      <li
-        class="c6"
-      >
-        <a
-          class="c7"
-          href="/signup"
-        >
-          <button
-            class="c8"
-            type="button"
-          >
-            Sign Up
-          </button>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div>
-    <h1>
-      Bantiiiii
-    </h1>
-    <p>
-      API_GATEWAY = 
-    </p>
-    <a
-      href="/login"
+        About
+      </a>
+    </li>
+    <li
+      class="c5"
     >
-      Go to login
-    </a>
-  </div>
+      <a
+        class="c6"
+        href="/tournaments"
+      >
+        Tournaments
+      </a>
+    </li>
+    <li
+      class="c5"
+    >
+      <a
+        class="c6"
+        href="/stats"
+      >
+        Stats
+      </a>
+    </li>
+    <li
+      class="c5"
+    >
+      <a
+        class="c6"
+        href="/signup"
+      >
+        <button
+          class="c7"
+          type="button"
+        >
+          Sign Up
+        </button>
+      </a>
+    </li>
+  </ul>
 </div>
 `;

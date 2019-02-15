@@ -1,5 +1,6 @@
 {
   "presets": ["react-app"],
+  "plugins": [["babel-plugin-styled-components", { "ssr": false }]],
   "env": {
     "production": {
       "plugins": ["babel-plugin-jsx-remove-data-test-id"]

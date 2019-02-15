@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar component should render 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  margin-right: 2rem;
+}
+
+.c1:hover {
+  color: white;
+}
+
+.c2 {
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3 {
+  background-color: black;
+  border: 0;
+  border-radius: 16px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding: 5px 15px;
+}
+
+<ul
+  class="c0"
+>
+  <li
+    class="c1"
+  >
+    <a
+      class="c2"
+      href="/about"
+    >
+      About
+    </a>
+  </li>
+  <li
+    class="c1"
+  >
+    <a
+      class="c2"
+      href="/tournaments"
+    >
+      Tournaments
+    </a>
+  </li>
+  <li
+    class="c1"
+  >
+    <a
+      class="c2"
+      href="/stats"
+    >
+      Stats
+    </a>
+  </li>
+  <li
+    class="c1"
+  >
+    <a
+      class="c2"
+      href="/signup"
+    >
+      <button
+        class="c3"
+        type="button"
+      >
+        Sign Up
+      </button>
+    </a>
+  </li>
+</ul>
+`;
