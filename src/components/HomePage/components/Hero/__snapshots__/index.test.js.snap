@@ -3,6 +3,11 @@
 exports[`Hero component should render 1`] = `
 .c0 {
   background-color: #353535;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 400px;
   padding: 1rem 0;
 }
 

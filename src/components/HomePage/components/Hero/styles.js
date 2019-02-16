@@ -3,6 +3,8 @@ import { colour } from '../../../../tokens';
 
 export const Background = styled.div`
     background-color: ${colour.black};
+    display: flex;
+    height: 400px;
     padding: 1rem 0;
 `;
 
