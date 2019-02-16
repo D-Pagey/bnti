@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Walkthrough component should render 1`] = `
+.c0 {
+  background-color: #00A7CB;
+  padding-top: 1.5rem;
+  padding-right: 0rem;
+  padding-bottom: 1.5rem;
+  padding-left: 0rem;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid #353535;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 225px;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  width: 25%;
+}
+
+.c2:last-child {
+  border: 0;
+}
+
+.c3 {
+  height: auto;
+  width: 100px;
+}
+
+.c6 {
+  height: auto;
+  width: 160px;
+}
+
+.c4 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-right: 0rem;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
+  text-align: center;
+}
+
+.c5 {
+  margin: 0rem;
+  text-align: center;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <img
+        alt="calendar"
+        class="c3"
+        src="calendar.png"
+      />
+      <div>
+        <h3
+          class="c4"
+        >
+          Step 1
+        </h3>
+        <p
+          class="c5"
+        >
+          Find your tournament, you can filter by game and date.
+        </p>
+      </div>
+    </div>
+    <div
+      class="c2"
+    >
+      <img
+        alt="calendar"
+        class="c3"
+        src="chip.png"
+      />
+      <div>
+        <h3
+          class="c4"
+        >
+          Step 2
+        </h3>
+        <p
+          class="c5"
+        >
+          Place your bounty to enter your tournament
+        </p>
+      </div>
+    </div>
+    <div
+      class="c2"
+    >
+      <img
+        alt="calendar"
+        class="c6"
+        src="loot.png"
+        width="160px"
+      />
+      <div>
+        <h3
+          class="c4"
+        >
+          Step 3
+        </h3>
+        <p
+          class="c5"
+        >
+          Kill players to earn their bounties, tracked by BRB.
+        </p>
+      </div>
+    </div>
+    <div
+      class="c2"
+    >
+      <img
+        alt="calendar"
+        class="c3"
+        src="3chips.png"
+      />
+      <div>
+        <h3
+          class="c4"
+        >
+          Step 4
+        </h3>
+        <p
+          class="c5"
+        >
+          Cash in your bounties. Gloat (optional)
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
