@@ -222,13 +222,13 @@ exports[`App component should render 1`] = `
       >
         <a
           class="c7"
-          href="/signup"
+          href="/login"
         >
           <button
             class="c8"
             type="button"
           >
-            Sign Up
+            Login
           </button>
         </a>
       </li>
@@ -289,10 +289,5 @@ exports[`App component should render 1`] = `
   <p>
     API_GATEWAY = 
   </p>
-  <a
-    href="/login"
-  >
-    Go to login
-  </a>
 </div>
 `;

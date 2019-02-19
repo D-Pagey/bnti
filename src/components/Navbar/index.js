@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import AuthContext from '../../contexts/auth';
 import * as S from './styles';
 
 const Navbar = () => {
+    const { authSession, authLogout } = useContext(AuthContext);
+
     return (
         <S.List>
             <S.ListItem>
@@ -17,9 +20,15 @@ const Navbar = () => {
             </S.ListItem>
 
             <S.ListItem>
-                <S.NavbarLink to="signup">
-                    <S.NavbarButton>Sign Up</S.NavbarButton>
-                </S.NavbarLink>
+                {authSession ? (
+                    <S.NavbarButton onClick={authLogout} data-testid="logoutButton">
+                        Logout
+                    </S.NavbarButton>
+                ) : (
+                    <S.NavbarLink to="login">
+                        <S.NavbarButton>Login</S.NavbarButton>
+                    </S.NavbarLink>
+                )}
             </S.ListItem>
         </S.List>
     );
