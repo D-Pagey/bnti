@@ -8,6 +8,10 @@
     "jest/globals": true,
     "cypress/globals": true
   },
+  "globals": {
+    "render": "readable",
+    "renderWithRouter": "readable"
+  },
   "rules": {
     "import/prefer-default-export": 0,
     "import/no-named-as-default": 0,
