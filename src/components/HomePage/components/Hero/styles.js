@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { colours } from '../../../../colours';
+import { colour } from '../../../../tokens';
 
 export const Background = styled.div`
-    background-color: ${colours.black};
+    background-color: ${colour.black};
     padding: 1rem 0;
 `;
 
@@ -22,8 +22,7 @@ export const Intro = styled.div`
 `;
 
 export const Subtitle = styled.h3`
-    color: ${colours.primaryColour};
-    font-family: 'Quicksand', sans-serif;
+    color: ${colour.blue};
     font-size: 36px;
     margin: 0 0 2rem 0;
     text-align: center;

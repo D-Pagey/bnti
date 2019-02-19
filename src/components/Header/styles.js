@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { colours } from '../../tokens/colours';
+import { colour } from '../../tokens';
 
 export const Wrapper = styled.div`
     align-items: center;
-    background-color: ${colours.primaryColour};
+    background-color: ${colour.blue};
     display: flex;
     justify-content: space-between;
     padding: 1.3rem 1rem;

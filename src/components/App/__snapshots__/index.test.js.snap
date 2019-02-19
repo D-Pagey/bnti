@@ -112,7 +112,6 @@ exports[`App component should render 1`] = `
 
 .c12 {
   color: #00A7CB;
-  font-family: 'Quicksand',sans-serif;
   font-size: 36px;
   margin: 0 0 2rem 0;
   text-align: center;
@@ -160,7 +159,7 @@ exports[`App component should render 1`] = `
 }
 
 .c0 {
-  font-family: 'Quicksand',Tahoma,Verdana,sans-serif;
+  font-family: Quicksand,Tahoma,Verdana,sans-serif;
 }
 
 <div

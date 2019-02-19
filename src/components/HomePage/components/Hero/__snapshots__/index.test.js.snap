@@ -40,7 +40,6 @@ exports[`Hero component should render 1`] = `
 
 .c3 {
   color: #00A7CB;
-  font-family: 'Quicksand',sans-serif;
   font-size: 36px;
   margin: 0 0 2rem 0;
   text-align: center;

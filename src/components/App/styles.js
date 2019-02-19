@@ -1,5 +1,6 @@
 import styled from 'styled-components';
+import { fontFamily } from '../../tokens';
 
 export const Wrapper = styled.div`
-    font-family: 'Quicksand', Tahoma, Verdana, sans-serif;
+    font-family: ${fontFamily.body};
 `;
