@@ -8,9 +8,11 @@ export default function HomePage() {
         <>
             <Hero />
             <Walkthrough />
-            <h1>Bantiiiii</h1>
-            <p>API_GATEWAY = {process.env.REACT_APP_API_GATEWAY}</p>
-            <Link to="/login">Go to login</Link>
+            <h1 style={{ color: 'white' }}>Bantiiiii</h1>
+            <p style={{ color: 'white' }}>API_GATEWAY = {process.env.REACT_APP_API_GATEWAY}</p>
+            <Link to="/login" style={{ color: 'white' }}>
+                Go to login
+            </Link>
         </>
     );
 }

@@ -1,47 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component should render 1`] = `
-.c5 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c6 {
-  margin-right: 2rem;
-}
-
-.c6:hover {
-  color: white;
-}
-
-.c7 {
-  color: inherit;
-  font-size: 1.2rem;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c8 {
-  background-color: black;
-  border: 0;
-  border-radius: 16px;
-  color: white;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 100;
-  padding: 5px 15px;
-}
-
 .c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -56,11 +15,15 @@ exports[`App component should render 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 1.3rem 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 .c3 {
   color: inherit;
+  font-size: 2.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -73,34 +36,7 @@ exports[`App component should render 1`] = `
   color: white;
 }
 
-.c9 {
-  background-color: #353535;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 400px;
-  padding: 1rem 0;
-}
-
-.c10 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 10px auto;
-  width: 950px;
-}
-
-.c11 {
+.c5 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -112,27 +48,33 @@ exports[`App component should render 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 450px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  max-width: 375px;
+  padding-top: 1.5rem;
+  padding-right: 0;
+  padding-bottom: 1.5rem;
+  padding-left: 0;
 }
 
-.c12 {
+.c7 {
   color: #00A7CB;
-  font-size: 36px;
-  margin: 0 0 2rem 0;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  max-width: 375px;
   text-align: center;
 }
 
-.c13 {
-  background: linear-gradient(180deg,#20fff2 0%,rgba(255,255,255,0) 100%),#00a7cb;
-  border: 0;
-  border-radius: 33px;
-  cursor: pointer;
-  font-size: 1.25rem;
-  opacity: 0.9;
-  padding: 1rem 1.35rem;
-}
-
-.c14 {
+.c8 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -148,48 +90,39 @@ exports[`App component should render 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 430px;
 }
 
-.c15 {
+.c9 {
   height: auto;
-  margin: 10px 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
   width: 250px;
 }
 
-.c16 {
+.c10 {
   height: auto;
-  margin: 10px 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
   width: 150px;
 }
 
-.c17 {
+.c11 {
   background-color: #00A7CB;
   padding-top: 1.5rem;
   padding-right: 0rem;
   padding-bottom: 1.5rem;
   padding-left: 0rem;
-  width: 100%;
 }
 
-.c18 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 2rem auto;
-}
-
-.c19 {
+.c12 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-right: 1px solid #353535;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -197,33 +130,38 @@ exports[`App component should render 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  max-width: 225px;
+}
+
+.c13 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding-top: 1rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
-  width: 25%;
+  max-width: 225px;
 }
 
-.c19:last-child {
-  border: 0;
-}
-
-.c20 {
+.c14 {
   height: auto;
   width: 100px;
 }
 
-.c23 {
+.c17 {
   height: auto;
   width: 160px;
 }
 
-.c21 {
+.c15 {
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-right: 0rem;
@@ -232,13 +170,66 @@ exports[`App component should render 1`] = `
   text-align: center;
 }
 
-.c22 {
+.c16 {
   margin: 0rem;
   text-align: center;
 }
 
 .c0 {
+  background-color: #353535;
   font-family: Quicksand,Tahoma,Verdana,sans-serif;
+}
+
+@media (min-width:768px) {
+  .c5 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    width: 450px;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 <div
@@ -263,191 +254,128 @@ exports[`App component should render 1`] = `
         Battles
       </a>
     </h2>
-    <ul
-      class="c5"
-    >
-      <li
-        class="c6"
-      >
-        <a
-          class="c7"
-          href="/about"
-        >
-          About
-        </a>
-      </li>
-      <li
-        class="c6"
-      >
-        <a
-          class="c7"
-          href="/tournaments"
-        >
-          Tournaments
-        </a>
-      </li>
-      <li
-        class="c6"
-      >
-        <a
-          class="c7"
-          href="/stats"
-        >
-          Stats
-        </a>
-      </li>
-      <li
-        class="c6"
-      >
-        <a
-          class="c7"
-          href="/signup"
-        >
-          <button
-            class="c8"
-            type="button"
-          >
-            Sign Up
-          </button>
-        </a>
-      </li>
-    </ul>
   </div>
   <div
-    class="c9"
+    class="c5"
   >
     <div
-      class="c10"
+      class="c6"
     >
-      <div
-        class="c11"
+      <h3
+        class="c7"
       >
-        <h3
-          class="c12"
-        >
-          Discover a new way to play your favourite games
-        </h3>
-        <a
-          href="/tournaments"
-        >
-          <button
-            class="c13"
-            type="button"
-          >
-            Find games
-          </button>
-        </a>
-      </div>
-      <div
-        class="c14"
-      >
-        <img
-          alt="pubg"
-          class="c15"
-          src="logo-pubg.png"
-          width="250px"
-        />
-        <img
-          alt="apex"
-          class="c16"
-          src="logo-apex.png"
-          width="150px"
-        />
-        <img
-          alt="fortnite"
-          class="c16"
-          src="logo-fortnite.png"
-          width="150px"
-        />
-      </div>
+        Discover a new way to play your favourite games
+      </h3>
+    </div>
+    <div
+      class="c8"
+    >
+      <img
+        alt="pubg"
+        class="c9"
+        src="logo-pubg.png"
+        width="250px"
+      />
+      <img
+        alt="apex"
+        class="c10"
+        src="logo-apex.png"
+        width="150px"
+      />
+      <img
+        alt="fortnite"
+        class="c10"
+        src="logo-fortnite.png"
+        width="150px"
+      />
     </div>
   </div>
   <div
-    class="c17"
+    class="c11"
   >
     <div
-      class="c18"
+      class="c12"
     >
       <div
-        class="c19"
+        class="c13"
       >
         <img
           alt="calendar"
-          class="c20"
+          class="c14"
           src="calendar.png"
         />
         <div>
           <h3
-            class="c21"
+            class="c15"
           >
             Step 1
           </h3>
           <p
-            class="c22"
+            class="c16"
           >
             Find your tournament, you can filter by game and date.
           </p>
         </div>
       </div>
       <div
-        class="c19"
+        class="c13"
       >
         <img
           alt="calendar"
-          class="c20"
+          class="c14"
           src="chip.png"
         />
         <div>
           <h3
-            class="c21"
+            class="c15"
           >
             Step 2
           </h3>
           <p
-            class="c22"
+            class="c16"
           >
             Place your bounty to enter your tournament
           </p>
         </div>
       </div>
       <div
-        class="c19"
+        class="c13"
       >
         <img
           alt="calendar"
-          class="c23"
+          class="c17"
           src="loot.png"
           width="160px"
         />
         <div>
           <h3
-            class="c21"
+            class="c15"
           >
             Step 3
           </h3>
           <p
-            class="c22"
+            class="c16"
           >
             Kill players to earn their bounties, tracked by BRB.
           </p>
         </div>
       </div>
       <div
-        class="c19"
+        class="c13"
       >
         <img
           alt="calendar"
-          class="c20"
+          class="c14"
           src="3chips.png"
         />
         <div>
           <h3
-            class="c21"
+            class="c15"
           >
             Step 4
           </h3>
           <p
-            class="c22"
+            class="c16"
           >
             Cash in your bounties. Gloat (optional)
           </p>
@@ -455,14 +383,19 @@ exports[`App component should render 1`] = `
       </div>
     </div>
   </div>
-  <h1>
+  <h1
+    style="color: white;"
+  >
     Bantiiiii
   </h1>
-  <p>
+  <p
+    style="color: white;"
+  >
     API_GATEWAY = 
   </p>
   <a
     href="/login"
+    style="color: white;"
   >
     Go to login
   </a>

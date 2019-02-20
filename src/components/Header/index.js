@@ -1,4 +1,6 @@
 import React from 'react';
+import Media from 'react-media';
+import { mediaQuery } from '../../tokens';
 import Navbar from '../Navbar';
 import * as S from './styles';
 
@@ -11,7 +13,7 @@ const Header = () => {
                 </S.Link>
             </S.Logo>
 
-            <Navbar />
+            <Media query={mediaQuery.min.medium} render={() => <Navbar />} />
         </S.Wrapper>
     );
 };

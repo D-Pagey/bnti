@@ -1,32 +1,33 @@
 import styled from 'styled-components';
 import { margin, padding } from 'polished';
-import { colour, fontSize, spacing } from '../../../../tokens';
+import { colour, fontSize, mediaQuery, spacing } from '../../../../tokens';
 
 export const Background = styled.div`
     background-color: ${colour.blue};
-    ${padding(spacing.large, spacing.none)}
-    width: 100%;
+    ${padding(spacing.large, spacing.none)};
+
+    @media ${mediaQuery.min.medium} {
+        display: flex;
+        justify-content: center;
+    }
 `;
 
 export const Wrapper = styled.div`
+    align-items: center;
     display: flex;
-    justify-content: center;
-    margin: ${spacing.big} auto;
+    flex-direction: column;
+
+    @media ${mediaQuery.min.medium} {
+        flex-direction: row;
+    }
 `;
 
 export const Step = styled.div`
     align-items: center;
-    border-right: 1px solid ${colour.black};
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    ${padding(spacing.medium, spacing.medium, spacing.big)};
     max-width: 225px;
-    ${padding(spacing.medium, spacing.medium, spacing.big)}
-    width: 25%;
-
-    &:last-child {
-        border: 0;
-    }
 `;
 
 export const Image = styled.img`
@@ -36,7 +37,7 @@ export const Image = styled.img`
 
 export const Subtitle = styled.h3`
     font-size: ${fontSize.large};
-    ${margin(spacing.medium, spacing.none)}
+    ${margin(spacing.medium, spacing.none)};
     text-align: center;
 `;
 

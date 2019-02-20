@@ -4,8 +4,10 @@ exports[`ErrorPage component should render 1`] = `
 .c0 {
   background-color: #353535;
   height: 100vh;
-  padding-top: 4rem;
-  width: 100%;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
 }
 
 .c1 {
@@ -20,6 +22,8 @@ exports[`ErrorPage component should render 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin: 0 auto;
+  max-width: 375px;
 }
 
 .c2 {
@@ -35,6 +39,7 @@ exports[`ErrorPage component should render 1`] = `
 .c4 {
   color: #00A7CB;
   font-size: 1.25rem;
+  width: 100%;
 }
 
 <div

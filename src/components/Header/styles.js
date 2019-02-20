@@ -1,17 +1,19 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { colour } from '../../tokens';
+import { padding } from 'polished';
+import { colour, fontSize, spacing } from '../../tokens';
 
 export const Wrapper = styled.div`
     align-items: center;
     background-color: ${colour.blue};
     display: flex;
     justify-content: space-between;
-    padding: 1.3rem 1rem;
+    ${padding(spacing.medium)};
 `;
 
 export const Link = styled(NavLink)`
     color: inherit;
+    font-size: ${fontSize.huge};
     text-decoration: none;
 `;
 
