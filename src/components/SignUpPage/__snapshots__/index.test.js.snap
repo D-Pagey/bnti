@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUpPage component should render 1`] = `
+.c0 {
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-bottom: 0rem;
+  margin-left: auto;
+  width: 30%;
+}
+
+.c1 {
+  text-align: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 300px;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+<div
+  class="c0"
+>
+  <h1
+    class="c1"
+  >
+    Sign Up
+  </h1>
+  <form
+    class="c2"
+  >
+    <label
+      class="c3"
+      for="username"
+    >
+      Username:
+      <input
+        id="username"
+        type="text"
+        value=""
+      />
+    </label>
+    <label
+      class="c3"
+      for="email"
+    >
+      Email:
+      <input
+        id="name"
+        type="text"
+        value=""
+      />
+    </label>
+    <label
+      class="c3"
+      for="password"
+    >
+      Password:
+      <input
+        id="password"
+        placeholder="FoobarTest1234!"
+        type="password"
+        value=""
+      />
+    </label>
+    <button
+      disabled=""
+      type="submit"
+    >
+      Sign Up
+    </button>
+  </form>
+</div>
+`;

@@ -222,6 +222,16 @@ exports[`App component should render 1`] = `
       >
         <a
           class="c7"
+          href="/signup"
+        >
+          Sign Up
+        </a>
+      </li>
+      <li
+        class="c6"
+      >
+        <a
+          class="c7"
           href="/login"
         >
           <button

@@ -31,11 +31,27 @@ function AuthProvider({ children }) {
             .catch((err) => console.log('authLogout err', err)); // eslint-disable-line
     };
 
+    const authSignUp = async ({ email, password }) => {
+        Auth.signUp({
+            username: email,
+            password,
+            attributes: {
+                email
+            }
+        })
+            .then((data) => console.log(data))
+            .catch((err) => console.log(err));
+    };
+
     useEffect(() => {
         localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(authSession));
     }, [authSession]);
 
-    return <AuthContext.Provider value={{ authSession, authLogin, authLogout }}>{children}</AuthContext.Provider>;
+    return (
+        <AuthContext.Provider value={{ authSession, authLogin, authLogout, authSignUp }}>
+            {children}
+        </AuthContext.Provider>
+    );
 }
 
 AuthProvider.propTypes = {

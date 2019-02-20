@@ -6,6 +6,7 @@ import AuthProvider from '../AuthProvider';
 import Header from '../Header';
 import HomePage from '../HomePage';
 import LoginPage from '../LoginPage';
+import SignUpPage from '../SignUpPage';
 import * as S from './styles';
 
 const history = createBrowserHistory();
@@ -26,6 +27,7 @@ export default function App() {
                     <Switch>
                         <Route exact path="/" component={HomePage} />
                         <Route path="/login" component={LoginPage} />
+                        <Route path="/signup" component={SignUpPage} />
                     </Switch>
                 </S.Wrapper>
             </Router>

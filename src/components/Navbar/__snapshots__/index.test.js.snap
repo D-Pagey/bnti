@@ -80,6 +80,16 @@ exports[`Navbar component should render 1`] = `
   >
     <a
       class="c2"
+      href="/signup"
+    >
+      Sign Up
+    </a>
+  </li>
+  <li
+    class="c1"
+  >
+    <a
+      class="c2"
       href="/login"
     >
       <button

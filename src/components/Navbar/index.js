@@ -20,6 +20,10 @@ const Navbar = () => {
             </S.ListItem>
 
             <S.ListItem>
+                <S.NavbarLink to="/signup">Sign Up</S.NavbarLink>
+            </S.ListItem>
+
+            <S.ListItem>
                 {authSession ? (
                     <S.NavbarButton onClick={authLogout} data-testid="logoutButton">
                         Logout
