@@ -5,8 +5,9 @@ import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
 import { Helmet } from 'react-helmet';
 import Header from '../Header';
-import HomePage from '../HomePage';
 import LoginPage from '../LoginPage';
+import ErrorPage from '../ErrorPage';
+import HomePage from '../HomePage';
 import * as S from './styles';
 
 const GlobalStyle = createGlobalStyle`${normalize()}`;
@@ -23,6 +24,7 @@ export default function App() {
                 <Switch>
                     <Route exact path="/" component={HomePage} />
                     <Route path="/login" component={LoginPage} />
+                    <Route component={ErrorPage} />
                 </Switch>
             </S.Wrapper>
         </Router>
