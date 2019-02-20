@@ -3,9 +3,9 @@ import AuthContext from '../../contexts/auth';
 import * as S from './styles';
 
 const SignUp = () => {
-    const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [username, setUsername] = useState('');
     const { authSignUp } = useContext(AuthContext);
 
     const handleChange = (handler) => ({ target: { value } }) => handler(value);

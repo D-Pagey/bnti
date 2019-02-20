@@ -39,8 +39,8 @@ function AuthProvider({ children }) {
                 email
             }
         })
-            .then((data) => console.log(data))
-            .catch((err) => console.log(err));
+            .then((data) => console.log(data)) // eslint-disable-line
+            .catch((err) => console.log(err)); // eslint-disable-line
     };
 
     useEffect(() => {
