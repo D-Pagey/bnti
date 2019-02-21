@@ -12,7 +12,7 @@
     "test": "rescripts test --verbose --coverage --no-cache",
     "test:e2e": "start-server-and-test start 3000 cypress:run",
     "test:e2e:interactive": "start-server-and-test start 3000 cypress:open",
-    "lint": "eslint ./src && stylelint ./src",
+    "lint": "eslint ./src/**/*.js && stylelint ./src/**/*.js",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open"
   },
