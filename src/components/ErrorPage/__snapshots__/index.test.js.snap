@@ -3,7 +3,6 @@
 exports[`ErrorPage component should render 1`] = `
 .c0 {
   background-color: #353535;
-  height: 100vh;
   padding-top: 2rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
@@ -22,7 +21,10 @@ exports[`ErrorPage component should render 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
   max-width: 375px;
 }
 

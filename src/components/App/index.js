@@ -5,6 +5,7 @@ import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
 import { Helmet } from 'react-helmet';
 import Header from '../Header';
+import Footer from '../Footer';
 import LoginPage from '../LoginPage';
 import ErrorPage from '../ErrorPage';
 import HomePage from '../HomePage';
@@ -26,6 +27,7 @@ export default function App() {
                     <Route path="/login" component={LoginPage} />
                     <Route component={ErrorPage} />
                 </Switch>
+                <Footer />
             </S.Wrapper>
         </Router>
     );

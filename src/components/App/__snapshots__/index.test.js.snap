@@ -29,11 +29,103 @@ exports[`App component should render 1`] = `
 }
 
 .c2 {
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .c4 {
-  color: white;
+  color: #FFF;
+}
+
+.c18 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 1.5rem;
+  padding-left: 0.75rem;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  max-width: 650px;
+}
+
+.c19 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.c20 {
+  color: #FFF;
+}
+
+.c21 {
+  color: #00A7CB;
+}
+
+.c22 {
+  border-bottom: 1px solid #FFF;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 5px;
+  list-style: none;
+  margin-top: 1.5rem;
+  margin-right: 0;
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 1.5rem;
+  padding-left: 0;
+  width: 265px;
+}
+
+.c23 {
+  text-align: center;
+}
+
+.c24 {
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c25 {
+  margin-top: 0.75rem;
+  margin-right: 0;
+  margin-bottom: 0.75rem;
+  margin-left: 0;
+}
+
+.c26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c27 {
+  margin-top: 0.75rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.75rem;
+  margin-left: 0.5rem;
 }
 
 .c5 {
@@ -178,6 +270,31 @@ exports[`App component should render 1`] = `
 .c0 {
   background-color: #353535;
   font-family: Quicksand,Tahoma,Verdana,sans-serif;
+}
+
+@media (min-width:768px) {
+  .c18 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4,25%);
+    justify-items: center;
+  }
+}
+
+@media (min-width:768px) {
+  .c22 {
+    border-top: 1px solid #FFF;
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 1.5rem;
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+    padding-left: 0;
+  }
 }
 
 @media (min-width:768px) {
@@ -383,21 +500,151 @@ exports[`App component should render 1`] = `
       </div>
     </div>
   </div>
-  <h1
-    style="color: white;"
+  <div
+    class="c18"
   >
-    Bantiiiii
-  </h1>
-  <p
-    style="color: white;"
-  >
-    API_GATEWAY = 
-  </p>
-  <a
-    href="/login"
-    style="color: white;"
-  >
-    Go to login
-  </a>
+    <h3
+      class="c19"
+    >
+      <span
+        class="c20"
+      >
+        BR
+      </span>
+      <span
+        class="c21"
+      >
+        Battles
+      </span>
+    </h3>
+    <ul
+      class="c22"
+    >
+      <li
+        class="c23"
+      >
+        <a
+          class="c24"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        class="c23"
+      >
+        <a
+          class="c24"
+          href="/about"
+        >
+          About
+        </a>
+      </li>
+      <li
+        class="c23"
+      >
+        <a
+          class="c24"
+          href="/"
+        >
+          FAQ
+        </a>
+      </li>
+      <li
+        class="c23"
+      >
+        <a
+          class="c24"
+          href="/jobs"
+        >
+          Jobs
+        </a>
+      </li>
+      <li
+        class="c23"
+      >
+        <a
+          class="c24"
+          href="/"
+        >
+          Tournaments
+        </a>
+      </li>
+      <li
+        class="c23"
+      >
+        <a
+          class="c24"
+          href="/"
+        >
+          Stats
+        </a>
+      </li>
+      <li
+        class="c23"
+      >
+        <a
+          class="c24"
+          href="/"
+        >
+          Account
+        </a>
+      </li>
+      <li
+        class="c23"
+      >
+        <a
+          class="c24"
+          href="/signin"
+        >
+          Sign In
+        </a>
+      </li>
+    </ul>
+    <p
+      class="c25"
+    >
+      <a
+        class="c24"
+        href="/"
+      >
+        Privacy Policy
+      </a>
+    </p>
+    <p
+      class="c25"
+    >
+      <a
+        class="c24"
+        href="/"
+      >
+        Terms of Use
+      </a>
+    </p>
+    <div
+      class="c26"
+    >
+      <img
+        alt="twitter"
+        class="c27"
+        src="twitter.png"
+      />
+      <img
+        alt="facebook"
+        class="c27"
+        src="facebook.png"
+      />
+      <img
+        alt="youtube"
+        class="c27"
+        src="youtube.png"
+      />
+      <img
+        alt="twitch"
+        class="c27"
+        src="twitch.png"
+      />
+    </div>
+  </div>
 </div>
 `;

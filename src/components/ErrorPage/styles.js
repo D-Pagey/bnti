@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import { padding } from 'polished';
+import { margin, padding } from 'polished';
 import { colour, fontSize, spacing } from '../../tokens';
 
 export const Background = styled.div`
     background-color: ${colour.black};
-    height: 100vh;
     ${padding(spacing.big, spacing.medium)}
 `;
 
@@ -12,7 +11,7 @@ export const Wrapper = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    ${margin(0, 'auto')};
     max-width: 375px;
 `;
 

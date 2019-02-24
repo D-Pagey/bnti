@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { padding } from 'polished';
+import { margin, padding } from 'polished';
 import { colour, fontSize, spacing } from '../../tokens';
 
 export const Wrapper = styled.div`
@@ -18,9 +18,9 @@ export const Link = styled(NavLink)`
 `;
 
 export const Logo = styled.h2`
-    margin: 0;
+    ${margin(0)};
 `;
 
 export const White = styled.span`
-    color: white;
+    color: ${colour.white};
 `;
