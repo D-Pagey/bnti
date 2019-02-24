@@ -29,11 +29,14 @@ exports[`Header component should render 1`] = `
 }
 
 .c1 {
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .c3 {
-  color: white;
+  color: #FFF;
 }
 
 <div

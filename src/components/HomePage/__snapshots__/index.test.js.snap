@@ -39,6 +39,23 @@ exports[`HomePage component should render 1`] = `
   text-align: center;
 }
 
+.c6 {
+  background: linear-gradient(180deg,#20fff2 0%,rgba(255,255,255,0) 100%),#00a7cb;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  opacity: 0.9;
+  padding-top: 1rem;
+  padding-right: 1.35rem;
+  padding-bottom: 1rem;
+  padding-left: 1.35rem;
+}
+
 .c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -140,5 +157,16 @@ exports[`HomePage component should render 1`] = `
       width="150px"
     />
   </div>
+  <a
+    data-testid="tournamentsLinkMaxMedium"
+    href="/tournaments"
+  >
+    <button
+      class="c6"
+      type="button"
+    >
+      Find tournaments
+    </button>
+  </a>
 </div>
 `;

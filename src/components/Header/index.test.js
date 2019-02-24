@@ -6,4 +6,10 @@ describe('Header component', () => {
         const { container } = renderWithRouter(<Header />);
         expect(container.firstChild).toMatchSnapshot();
     });
+
+    it('should render with navbar', () => {
+        setMatchMedia(800);
+        const { getByTestId } = renderWithRouter(<Header />);
+        getByTestId('navbar');
+    });
 });

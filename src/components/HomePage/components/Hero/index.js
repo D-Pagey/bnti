@@ -15,7 +15,7 @@ const Hero = () => (
             <Media
                 query={mediaQuery.min.medium}
                 render={() => (
-                    <NavLink to="/tournaments">
+                    <NavLink to="/tournaments" data-testid="tournamentsLinkMinMedium">
                         <S.Button>Find tournaments</S.Button>
                     </NavLink>
                 )}
@@ -31,7 +31,7 @@ const Hero = () => (
         <Media
             query={mediaQuery.max.medium}
             render={() => (
-                <NavLink to="/tournaments">
+                <NavLink to="/tournaments" data-testid="tournamentsLinkMaxMedium">
                     <S.Button>Find tournaments</S.Button>
                 </NavLink>
             )}

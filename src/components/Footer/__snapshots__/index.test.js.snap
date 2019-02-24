@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should render 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 1.5rem;
+  padding-left: 0.75rem;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  max-width: 650px;
+}
+
+.c1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.c2 {
+  color: #FFF;
+}
+
+.c3 {
+  color: #00A7CB;
+}
+
+.c4 {
+  border-bottom: 1px solid #FFF;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 5px;
+  list-style: none;
+  margin-top: 1.5rem;
+  margin-right: 0;
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 1.5rem;
+  padding-left: 0;
+  width: 265px;
+}
+
+.c5 {
+  text-align: center;
+}
+
+.c6 {
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  margin-top: 0.75rem;
+  margin-right: 0;
+  margin-bottom: 0.75rem;
+  margin-left: 0;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c9 {
+  margin-top: 0.75rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.75rem;
+  margin-left: 0.5rem;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4,25%);
+    justify-items: center;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    border-top: 1px solid #FFF;
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 1.5rem;
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+    padding-left: 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <h3
+    class="c1"
+  >
+    <span
+      class="c2"
+    >
+      BR
+    </span>
+    <span
+      class="c3"
+    >
+      Battles
+    </span>
+  </h3>
+  <ul
+    class="c4"
+  >
+    <li
+      class="c5"
+    >
+      <a
+        class="c6"
+        href="/"
+      >
+        Home
+      </a>
+    </li>
+    <li
+      class="c5"
+    >
+      <a
+        class="c6"
+        href="/about"
+      >
+        About
+      </a>
+    </li>
+    <li
+      class="c5"
+    >
+      <a
+        class="c6"
+        href="/"
+      >
+        FAQ
+      </a>
+    </li>
+    <li
+      class="c5"
+    >
+      <a
+        class="c6"
+        href="/jobs"
+      >
+        Jobs
+      </a>
+    </li>
+    <li
+      class="c5"
+    >
+      <a
+        class="c6"
+        href="/"
+      >
+        Tournaments
+      </a>
+    </li>
+    <li
+      class="c5"
+    >
+      <a
+        class="c6"
+        href="/"
+      >
+        Stats
+      </a>
+    </li>
+    <li
+      class="c5"
+    >
+      <a
+        class="c6"
+        href="/"
+      >
+        Account
+      </a>
+    </li>
+    <li
+      class="c5"
+    >
+      <a
+        class="c6"
+        href="/signin"
+      >
+        Sign In
+      </a>
+    </li>
+  </ul>
+  <p
+    class="c7"
+  >
+    <a
+      class="c6"
+      href="/"
+    >
+      Privacy Policy
+    </a>
+  </p>
+  <p
+    class="c7"
+  >
+    <a
+      class="c6"
+      href="/"
+    >
+      Terms of Use
+    </a>
+  </p>
+  <div
+    class="c8"
+  >
+    <img
+      alt="twitter"
+      class="c9"
+      src="twitter.png"
+    />
+    <img
+      alt="facebook"
+      class="c9"
+      src="facebook.png"
+    />
+    <img
+      alt="youtube"
+      class="c9"
+      src="youtube.png"
+    />
+    <img
+      alt="twitch"
+      class="c9"
+      src="twitch.png"
+    />
+  </div>
+</div>
+`;

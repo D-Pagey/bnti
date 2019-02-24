@@ -11,4 +11,14 @@ describe('Hero component', () => {
         const { container } = renderWithRouter(<Hero />);
         expect(container.firstChild).toMatchSnapshot();
     });
+
+    it.each`
+        viewportWidth | testId
+        ${500}        | ${'tournamentsLinkMaxMedium'}
+        ${800}        | ${'tournamentsLinkMinMedium'}
+    `('should render with navbar', ({ viewportWidth, testId }) => {
+        setMatchMedia(viewportWidth);
+        const { getByTestId } = renderWithRouter(<Hero />);
+        getByTestId(testId);
+    });
 });

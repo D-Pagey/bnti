@@ -10,7 +10,8 @@
   },
   "globals": {
     "render": "readable",
-    "renderWithRouter": "readable"
+    "renderWithRouter": "readable",
+    "setMatchMedia": "readable"
   },
   "rules": {
     "import/prefer-default-export": 0,

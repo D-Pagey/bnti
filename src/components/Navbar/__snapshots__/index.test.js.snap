@@ -11,39 +11,52 @@ exports[`Navbar component should render 1`] = `
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 }
 
 .c1 {
+  margin-top: 0;
   margin-right: 2rem;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 .c1:hover {
-  color: white;
+  color: #FFF;
 }
 
 .c2 {
   color: inherit;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 500;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .c3 {
-  background-color: black;
+  background-color: #353535;
   border: 0;
-  border-radius: 16px;
-  color: white;
+  border-radius: 1rem;
+  color: #FFF;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 100;
-  padding: 5px 15px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
 }
 
 <ul
   class="c0"
+  data-testid="navbar"
 >
   <li
     class="c1"

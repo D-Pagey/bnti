@@ -9,10 +9,25 @@ import { createMemoryHistory } from 'history';
 global.render = render;
 global.renderWithRouter = (ui) => render(<Router history={createMemoryHistory()}>{ui}</Router>);
 
-window.matchMedia = jest.fn().mockImplementation((query) => ({
-    matches: false,
-    media: query,
-    onchange: null,
-    addListener: jest.fn(),
-    removeListener: jest.fn()
-}));
+global.setMatchMedia = (viewportWidth) => {
+    global.matchMedia = jest.fn().mockImplementation((query) => {
+        const isMinWidth = query.includes('min-width');
+        const isMaxWidth = query.includes('max-width');
+        const queryWidth = parseInt((/(\d+)px/.exec(query) || [])[0], 10);
+
+        let matches = false;
+
+        if (isMinWidth) matches = viewportWidth > queryWidth;
+        if (isMaxWidth) matches = viewportWidth < queryWidth;
+
+        return {
+            matches,
+            media: query,
+            onchange: null,
+            addListener: jest.fn(),
+            removeListener: jest.fn()
+        };
+    });
+};
+
+setMatchMedia(320);

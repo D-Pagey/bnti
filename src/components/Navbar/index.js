@@ -3,7 +3,7 @@ import * as S from './styles';
 
 const Navbar = () => {
     return (
-        <S.List>
+        <S.List data-testid="navbar">
             <S.ListItem>
                 <S.NavbarLink to="/about">About</S.NavbarLink>
             </S.ListItem>
