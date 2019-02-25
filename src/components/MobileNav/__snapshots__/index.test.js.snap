@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileNav component should render 1`] = `
+.c0 {
+  background-color: #00A7CB;
+  border-top: 2px solid #353535;
+  bottom: 0;
+  height: 75px;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25rem;
+  height: 100%;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  color: black;
+}
+
+<div
+  class="c0"
+  data-testid="closedNav"
+>
+  <ul
+    class="c1"
+  >
+    <li>
+      Home
+    </li>
+    <li>
+      <button
+        data-testid="menuButton"
+        type="button"
+      >
+        Menu
+      </button>
+    </li>
+    <li>
+      Account
+    </li>
+  </ul>
+</div>
+`;

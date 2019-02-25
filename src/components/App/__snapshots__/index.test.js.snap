@@ -1,42 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component should render 1`] = `
-.c1 {
+.c29 {
+  background-color: #00A7CB;
+  border-top: 2px solid #353535;
+  bottom: 0;
+  height: 75px;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+
+.c30 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #00A7CB;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-top: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-}
-
-.c3 {
-  color: inherit;
-  font-size: 2.5rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c2 {
+  font-size: 1.25rem;
+  height: 100%;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  list-style: none;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
-}
-
-.c4 {
-  color: #FFF;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  color: black;
 }
 
 .c19 {
@@ -126,6 +125,44 @@ exports[`App component should render 1`] = `
   margin-right: 0.5rem;
   margin-bottom: 0.75rem;
   margin-left: 0.5rem;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #00A7CB;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.c3 {
+  color: inherit;
+  font-size: 2.5rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.c4 {
+  color: #FFF;
 }
 
 .c5 {
@@ -287,6 +324,10 @@ exports[`App component should render 1`] = `
 .c0 {
   background-color: #353535;
   font-family: Quicksand,Tahoma,Verdana,sans-serif;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 4rem;
+  margin-left: 0;
 }
 
 @media (min-width:768px) {
@@ -673,6 +714,29 @@ exports[`App component should render 1`] = `
         src="twitch.png"
       />
     </div>
+  </div>
+  <div
+    class="c29"
+    data-testid="closedNav"
+  >
+    <ul
+      class="c30"
+    >
+      <li>
+        Home
+      </li>
+      <li>
+        <button
+          data-testid="menuButton"
+          type="button"
+        >
+          Menu
+        </button>
+      </li>
+      <li>
+        Account
+      </li>
+    </ul>
   </div>
 </div>
 `;

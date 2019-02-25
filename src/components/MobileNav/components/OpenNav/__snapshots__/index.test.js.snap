@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpenNav component should render 1`] = `
+.c0 {
+  background-color: #00A7CB;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+
+.c1 {
+  list-style: none;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+<div
+  class="c0"
+  data-testid="openNav"
+>
+  <ul
+    class="c1"
+  >
+    <li>
+      Find Tournaments
+    </li>
+    <li>
+      About
+    </li>
+    <li>
+      <button
+        class=""
+        type="button"
+      >
+        Close Menu
+      </button>
+    </li>
+    <li>
+      Sign up/Login
+    </li>
+    <li>
+      Account
+    </li>
+  </ul>
+</div>
+`;

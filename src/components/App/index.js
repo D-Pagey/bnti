@@ -4,8 +4,11 @@ import { createBrowserHistory } from 'history';
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
 import { Helmet } from 'react-helmet';
-import Header from '../Header';
+import Media from 'react-media';
+import { mediaQuery } from '../../tokens';
+import MobileNav from '../MobileNav';
 import Footer from '../Footer';
+import Header from '../Header';
 import LoginPage from '../LoginPage';
 import ErrorPage from '../ErrorPage';
 import HomePage from '../HomePage';
@@ -28,6 +31,7 @@ export default function App() {
                     <Route component={ErrorPage} />
                 </Switch>
                 <Footer />
+                <Media query={mediaQuery.max.medium} render={() => <MobileNav />} />
             </S.Wrapper>
         </Router>
     );
